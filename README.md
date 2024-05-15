@@ -1,4 +1,5 @@
 ########## Web_Link_Extractor  ########
+
 A Simple Producer/Consumer Web Link Extractor
 1. The producer receives a list of URLs it can be from file, command line etc; I have used some dummy data from wikipedia and extracted the urls only from that data(saved as a text file).
 
@@ -9,13 +10,19 @@ line) against each parsed URL. The code in this repo is giving the List in CMd p
 4. This can fther be extended as to save this data to a database.
 
 ####### I have used Apahe kafka using confluent in my project #######
-Firstly, we need to set up our kafka and get our IDE ready to run our project. This could be done using https://developer.confluent.io . The site demonstartes pretty straight forward explanation to go ahead and run a basic producer and cosumer on ur IDE.
+
+Firstly, we need to set up our kafka and get our IDE ready to run our project. This could be done using https://developer.confluent.io . 
+The site demonstartes pretty straight forward explanation to go ahead and run a basic producer and cosumer on ur IDE.
 
 ########### coomands used to run producer and consumer concurrently #########
-python main.py -- This command would run the producer first printing producer data and then folloed by the consumer data in the same terminal. 
+
+python main.py -- This command would run the producer first printing producer data and then followed by the consumer data in the same terminal. 
 
 If the Confluent CLI was set up then we can run producer and consumer in 2 different terminals to see results at the same time using :
+
+
 confluent kafka topic produce links11 --- here links11 is the topic that we r using for running a producer.
+
 confluent kafka topic consume --from-beginning links --- consumer.
 
 
