@@ -23,6 +23,6 @@ If the Confluent CLI was set up then we can run producer and consumer in 2 diffe
 
 confluent kafka topic produce links11 --- here links11 is the topic that we r using for running a producer.
 
-confluent kafka topic consume --from-beginning links --- consumer.
+confluent kafka topic consume --from-beginning links11 --- consumer.
 
 
