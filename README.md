@@ -25,4 +25,8 @@ confluent kafka topic produce links11 --- here links11 is the topic that we r us
 
 confluent kafka topic consume --from-beginning links11 --- consumer.
 
+****************
+Please not that we have session timeouts / token expired mesages when running the producer and consumer in seperate terminals after a time limit and we might need to generate new API key pair to keep the process going without disruption.
+****************
+
 
